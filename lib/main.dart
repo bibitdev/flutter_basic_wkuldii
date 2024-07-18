@@ -13,15 +13,35 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
-        appBar: AppBar(
-          title: const Text('Flutter Basic'),
-          backgroundColor: Colors.greenAccent,
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+          backgroundColor: Colors.lightBlue,
+          appBar: AppBar(
+            title: const Text('Flutter Basic'),
+            backgroundColor: Colors.greenAccent,
+          ),
+          body: Stack(
+            children: [
+              Container(
+                width: 400,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 300,
+                height: 50,
+                color: Colors.blue,
+              ),
+              Container(
+                width: 200,
+                height: 50,
+                color: Colors.red,
+              ),
+              Container(
+                width: 200,
+                height: 50,
+                color: Colors.amber,
+              ),
+            ],
+          )),
     );
   }
 }
