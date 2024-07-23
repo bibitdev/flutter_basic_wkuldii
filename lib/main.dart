@@ -3,6 +3,7 @@ import 'package:flutter_basic_with_kuldii/appbar.dart';
 import 'package:flutter_basic_with_kuldii/date_format.dart';
 import 'package:flutter_basic_with_kuldii/dialog.dart';
 import 'package:flutter_basic_with_kuldii/dismissible.dart';
+import 'package:flutter_basic_with_kuldii/drawer.dart';
 import 'package:flutter_basic_with_kuldii/extract_widget.dart';
 import 'package:flutter_basic_with_kuldii/grid_view.dart';
 import 'package:flutter_basic_with_kuldii/list_tile.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Dismissibles(),
+      home: Drawers(),
     );
   }
 }
