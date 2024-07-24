@@ -11,6 +11,7 @@ import 'package:flutter_basic_with_kuldii/list_view.dart';
 import 'package:flutter_basic_with_kuldii/mapping_list.dart';
 import 'package:flutter_basic_with_kuldii/stack.dart';
 import 'package:flutter_basic_with_kuldii/statefull.dart';
+import 'package:flutter_basic_with_kuldii/switch.dart';
 import 'package:flutter_basic_with_kuldii/tab_bar.dart';
 import 'package:flutter_basic_with_kuldii/text_field.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Drawers(),
+      home: Switchs(),
     );
   }
 }
