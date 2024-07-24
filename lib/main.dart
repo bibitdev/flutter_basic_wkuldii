@@ -9,6 +9,7 @@ import 'package:flutter_basic_with_kuldii/grid_view.dart';
 import 'package:flutter_basic_with_kuldii/list_tile.dart';
 import 'package:flutter_basic_with_kuldii/list_view.dart';
 import 'package:flutter_basic_with_kuldii/mapping_list.dart';
+import 'package:flutter_basic_with_kuldii/pages/product_page.dart';
 import 'package:flutter_basic_with_kuldii/stack.dart';
 import 'package:flutter_basic_with_kuldii/statefull.dart';
 import 'package:flutter_basic_with_kuldii/switch.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Switchs(),
+      home: ProductModels(),
     );
   }
 }
