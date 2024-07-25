@@ -1,33 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_with_kuldii/appbar.dart';
-import 'package:flutter_basic_with_kuldii/date_format.dart';
-import 'package:flutter_basic_with_kuldii/dialog.dart';
-import 'package:flutter_basic_with_kuldii/dismissible.dart';
-import 'package:flutter_basic_with_kuldii/drawer.dart';
-import 'package:flutter_basic_with_kuldii/extract_widget.dart';
-import 'package:flutter_basic_with_kuldii/grid_view.dart';
-import 'package:flutter_basic_with_kuldii/list_tile.dart';
-import 'package:flutter_basic_with_kuldii/list_view.dart';
-import 'package:flutter_basic_with_kuldii/mapping_list.dart';
-import 'package:flutter_basic_with_kuldii/pages/product_page.dart';
-import 'package:flutter_basic_with_kuldii/stack.dart';
-import 'package:flutter_basic_with_kuldii/statefull.dart';
-import 'package:flutter_basic_with_kuldii/switch.dart';
-import 'package:flutter_basic_with_kuldii/tab_bar.dart';
-import 'package:flutter_basic_with_kuldii/text_field.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_basic_with_kuldii/media_query.dart';
 
 void main() {
-  runApp(MyApp());
+  // Materi Media Query
+  // setting rotate only mode potrait
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  // bool isDarkTheme = false;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProductModels(),
+      home: MediaQuerys(),
+      // Switch tema
+      // theme: isDarkTheme ? ThemeData.dark() : ThemeData.light(),
+      // home: Switchs(
+      //   onThemeChanged: (value) {
+      //     setState(() {
+      //       isDarkTheme = value;
+      //     });
+      //   },
+      // ),
     );
   }
 }
