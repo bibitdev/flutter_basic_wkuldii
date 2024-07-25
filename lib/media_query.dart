@@ -46,7 +46,7 @@ class MediaQuerys extends StatelessWidget {
                               height: bodyHeight * 0.5,
                               width: mediaQueryWidth,
                               color: Colors.purple,
-                              child: Center(
+                              child: const Center(
                                   child: Text(
                                 'Hello Dunia',
                                 style: TextStyle(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_basic_with_kuldii/cuppertino.dart';
 import 'package:flutter_basic_with_kuldii/media_query.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MediaQuerys(),
+      home: Cuppertino(),
       // Switch tema
       // theme: isDarkTheme ? ThemeData.dark() : ThemeData.light(),
       // home: Switchs(
